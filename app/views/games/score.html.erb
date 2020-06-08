@@ -1,0 +1,8 @@
+
+<% if @valid_both == true %>
+  <h2>Congrats <%= @word %> is valid word</h2>
+<% elsif @english_word == false %>
+  <h2>Sorry <%= @word %> is not an english word</h2>
+  <% elsif @valid_word == false %>
+  <h2>Sorry <%= @word %> can't be built out of <%= letters %></h2>
+<% end %>
